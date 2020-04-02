@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Feb 15 18:30:49 EST 2019
+0.baseType=DIRECTORY
+0.base=/home/hrishi/AndroidStudioProjects/GroupMessenger1/app/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+0.set=DEX
+count=1

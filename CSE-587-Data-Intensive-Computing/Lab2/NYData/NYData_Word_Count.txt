@@ -1,0 +1,10 @@
+said	3917
+year	2751
+player	2517
+team	2212
+game	1971
+one	1853
+play	1773
+time	1724
+first	1573
+last	1545

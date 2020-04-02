@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>DIC Lab 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div style="background-color: blue;width: 100%;padding: 0 auto;margin-top: 0 auto; height: 60px;display: block;">
+            <p style="text-align: center; font-size: 30px;font-weight: bold; vertical-align:middle;line-height: 60px">
+                DATA INTENSIVE COMPUTING LAB 2</p>
+        </div>
+        <div style="float: left;width: 50%">
+            <p style="font-size: 20px">Please select a data source to view the word count for the top 10 words:</p>
+            <select onchange="$('#image1').attr('src', this.options[this.selectedIndex].value);">
+                <option value="" selected>--</option>
+                <option value="Images/NewYorkTimes_WordCount.jpg">New York Times</option>
+                <option value="Images/CommonCrawl_WordCount.jpg">Common Crawl</option>
+                <option value="Images/twitterData.jpg">Twitter</option>
+            </select>
+      
+            <br><br>
+    
+            <img  style="text-align: center;width: 100%" id="image1" src="">
+        </div>
+        <div style="float: left;width: 50%;">
+
+            <p style="font-size: 20px">Please select a data source to view the word co occurence of top 10 words from word count:</p>
+            <select onchange="$('#image2').attr('src', this.options[this.selectedIndex].value);">
+                <option value="" selected>--</option>
+                <option value="Images/NewYorkTimes_Word_Cooccurence.jpg">New York Times</option>
+                <option value="Images/CommonCrawl_Word_Cooccurence.jpg">Common Crawl</option>
+                <option value="Images/twitterData_Word_Cooccurence.jpg">Twitter</option>
+            </select>
+  
+            <br><br>
+
+            <img  style="text-align: center;width: 100%" id="image2" src="">
+        </div>
+    </body>
+</html>

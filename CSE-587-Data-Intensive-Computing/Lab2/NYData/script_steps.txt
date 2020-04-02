@@ -1,0 +1,12 @@
+docker run --hostname=quickstart.cloudera --privileged=true -t -i -v /home/hrishi/Documents/CSE587/Lab2:/src --publish-all=true -p 8888 cloudera/quickstart /usr/bin/docker-quickstart
+
+hadoop fs -mkdir /user/hnitturk
+hadoop fs -mkdir /user/hnitturk/MR/
+hadoop fs -mkdir /user/hnitturk/MR/NYTdata
+
+hadoop fs -put data1.txt /user/hnitturk/MR/NYTdata
+
+hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming-2.6.0-cdh5.7.0.jar -file /src/NYData/mapper.py -mapper /src/NYData/mapper.py -file /src/NYData/reducer.py -reducer /src/NYData/reducer.py -input /user/hnitturk/MR/NYData/input/*.txt -output /user/hnitturk/MR/NYData/output
+
+
+hadoop fs -get /user/hnitturk/MR/NYTdata/output5/ /src/
